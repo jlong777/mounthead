@@ -1,11 +1,10 @@
 A SLURM plugin to build a cluster on-the-fly, using the 
 submit-host as a head node that exports private mounts.
 
-usage:
-First, decide which directories on the submit-host should be exported to other
-nodes. /home, /opt, and /usr are automatically exported. Any other directories
-to be exported are done so with the environment variable CCMOUNTS. For example, 
-to have slave nodes NFS mount '/data/mydir' and '/raid0', set CCMOUNTS in either 
+Decide which directories on the submit-host should be exported to other nodes.
+/home, /opt, and /usr are automatically exported. Any other directories to be
+exported are done so with the environment variable CCMOUNTS. For example, to
+have slave nodes NFS mount '/data/mydir' and '/raid0', set CCMOUNTS in either 
 the submission shell, or the job script:
 
 $ export CCMOUNTS="/data/mydir,/raid0"
