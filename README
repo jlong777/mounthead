@@ -1,5 +1,4 @@
-A SLURM plugin to build a cluster on-the-fly, using the 
-submit-host as a head node that exports private mounts.
+A SLURM plugin to build a cluster on-the-fly, using submit-host as head node.
 
 Decide which directories on the submit-host should be exported to other nodes.
 /home, /opt, and /usr are automatically exported. Any other directories to be
