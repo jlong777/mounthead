@@ -1,0 +1,2 @@
+A SLURM plugin to build a cluster on-the-fly, using the 
+submit-host as a head node that exports private mounts.
